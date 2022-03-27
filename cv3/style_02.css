@@ -1,0 +1,8 @@
+span.text-box {
+    display: inline-block;
+
+    border: 1px dashed darkblue;
+    color: darkblue;
+
+    padding: 0px 2px 0px 2px;
+}

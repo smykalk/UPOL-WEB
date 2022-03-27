@@ -1,0 +1,11 @@
+/* že obsah elementu span bude zobrazen šedou barvou, odkazy modrou barvou
+ a při najetí myši se změní na tmavě modrou. 
+ Pokud je odkaz použit uvnitř elementu span, převezme jeho barvu (v našem případě tedy bude vizualizován šedou barvou,
+  změna barvy po najetí myši zůstává stejná jako u odkazů mimo element span). */
+
+  span {color: gray;}
+
+  a {color:blue;}
+  span>a {color:inherit;}
+  a:hover {color:darkblue;}
+  

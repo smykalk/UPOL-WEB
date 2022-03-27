@@ -1,0 +1,5 @@
+body>p {color:darkgrey;}
+
+body>p+p {color:blue;}
+
+body>p+p+p {color:darkgrey;}

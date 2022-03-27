@@ -1,0 +1,22 @@
+/* Moc se omlouvam, nekam mi ty css soubory utekly, kdyz jsem vytvarel archiv /*
+
+article.frame {
+    margin: auto;
+
+    box-sizing: border-box;
+    width: 20em;
+
+    border-width: 1px 1px 1px 0.75em;
+    border-style: solid;
+    border-color: lightblue;
+    padding: 1em;
+}
+
+article.frame h1, article.frame h2 {
+    margin: 0;
+}
+
+article.frame h2 {
+    color: gray;
+    font-size: medium;
+}

@@ -1,0 +1,9 @@
+p span.text-box {
+    display: block;
+
+    border: 1px dashed darkblue;
+    color: darkblue;
+
+    padding: 1em;
+    margin: 1em 0em 1em 0em;
+}
