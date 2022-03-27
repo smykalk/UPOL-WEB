@@ -29,6 +29,10 @@
     background-color: white;
 }
 
+.block__heading--third {
+    padding: 0;
+}
+
 .block__text {
     margin:0.5em 0em 0.5em 0em;
 }
