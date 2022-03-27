@@ -1,61 +1,38 @@
 /* opravdu valmi špatně napsané CSS
 upravte HTML a CSS tak, aby bylo snadno spravovatelné, srozumitelné a rozšířitelné a zachovejte vizualizaci */
 
-div span a:hover {
-    color: black;  
-  }
-  
-  #card2 {
+a:hover {
     color: black;
-    border: 1px solid black;
+}
+
+.card {
+    width:60ch;
+    margin:1em auto;
     padding: 1em;
-    background-color: lightgreen;
-  }
-  
-  .card {
-    padding: 1em;
-    background-color: lightgreen;
-    border: 1px solid darkgreen;
-  }
-  
-  span > a {
-    color: green;
-  }
-  
-  div {
-    width: 60ch;
-    margin: 1em auto;
+    border-width: 1px;
+    border-style: solid;
+
     color: #303030;
-  }
-  
-  a {
-    color: blue;
-    background-color: black;
-  }
-  
-  div#card2 {
+    background-color: lightgreen;
+    border-color: darkgreen;
+}
+
+.card--special {
+    color: black;
     background-color: lightblue;
-  }
-  
-  .card3 span:last-child {
-    background-color: red !important;
-  }
-  
-  div a {
+    border-color: black;
+}
+
+.card__link {
+    color: green;
     background-color: yellow;
-  }
-  
-  a {
-    padding: 0em 0.4em;  
-  }
-  
-  .card span:last-child {
+    padding: 0em 0.4em;
+}
+
+.card__highlight-text-1 {
     background-color: yellow;
-  }
-  
-  .card3 span:first-child {
-    background-color: yellow;
-  }
-  
-  
-  
+}
+
+.card__highlight-text-2 {
+    background-color: red;
+}
