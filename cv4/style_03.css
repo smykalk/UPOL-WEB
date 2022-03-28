@@ -1,10 +1,6 @@
 /* opravdu valmi špatně napsané CSS
 upravte HTML a CSS tak, aby bylo snadno spravovatelné, srozumitelné a rozšířitelné a zachovejte vizualizaci */
 
-a:hover {
-    color: black;
-}
-
 .card {
     width:60ch;
     margin:1em auto;
@@ -27,6 +23,10 @@ a:hover {
     color: green;
     background-color: yellow;
     padding: 0em 0.4em;
+}
+
+.card__link:hover {
+    color:black;
 }
 
 .card__highlight-text-1 {
