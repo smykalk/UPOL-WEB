@@ -1,8 +1,2 @@
-cv2/smykal_cv2.zip
-cv3/smykal_cv3.zip
-cv4/smykal_cv4.zip
-cv1/1cviceni.pdf
-cv2/cv2.pdf
-cv3/cv3.pdf
-cv4/cv4.pdf
-cv5/cv5.pdf
+*.zip
+*.pdf
