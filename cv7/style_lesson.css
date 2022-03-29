@@ -1,0 +1,11 @@
+@media (max-width: 900px) {
+    .queries {
+        color: blue;
+    }
+}
+
+@media (min-width: 900px) {
+    .queries {
+        color: green;
+    }
+}
