@@ -26,10 +26,10 @@
     color:black;
 }
 
-.card__highlight-text-1 {
+.card__highlight-warning {
     background-color: yellow;
 }
 
-.card__highlight-text-2 {
+.card__highlight-error {
     background-color: red;
 }

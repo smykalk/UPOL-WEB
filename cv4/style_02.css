@@ -4,12 +4,12 @@
     padding: 0.5em 1em 0.5em 1em;
 }
 
-.block--first {
+.block--standard {
     color: black;
     background-color: white;
 }
 
-.block--second {
+.block--alt {
     color: white;
     background-color: mediumvioletred;
 }
@@ -19,17 +19,17 @@
     padding: 0.5em 1em 0.5em 1em;
 }
 
-.block__heading--first {
-    color: white;
-    background-color: mediumvioletred;
-}
-
-.block__heading--second {
+.block__heading--standard {
     color: mediumvioletred;
     background-color: white;
 }
 
-.block__heading--third {
+.block__heading--alt {
+    color: white;
+    background-color: mediumvioletred;
+}
+
+.block__heading--nopadding {
     padding: 0;
 }
 
