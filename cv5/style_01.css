@@ -8,6 +8,7 @@
 }
 
 .schedule__item {
+    /* Flex jen pro jednodussi zarovnani */
     display: flex;
     justify-content: left;
     align-items: center;
