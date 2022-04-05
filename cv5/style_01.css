@@ -1,0 +1,118 @@
+.schedule {
+    display: grid;
+    padding: 1em;
+    grid-template-columns: [day-name] 1fr repeat(6, [lesson] 1fr);
+    grid-template-rows: [lesson-heading] 5em [day-mon] 5em [day-tue] 5em [day-wed] 5em [day-thu] 5em [day-fri] 5em;
+    gap: 1px;
+    place-items: stretch;
+}
+
+.schedule__item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    outline: 1px solid black;
+    grid-row-end: span 1;
+    padding: 1em;    
+}
+
+/* FIRST ROW OF THE SCHEDULE */
+
+.schedule__item--lesson-heading {
+    grid-row-start: lesson-heading;
+    grid-column-end: span 1;
+}
+
+.schedule__item--lesson-heading--1 {
+    grid-column-start: lesson 1;
+}
+
+.schedule__item--lesson-heading--2 {
+    grid-column-start: lesson 2;
+}
+
+.schedule__item--lesson-heading--3 {
+    grid-column-start: lesson 3;
+}
+
+.schedule__item--lesson-heading--4 {
+    grid-column-start: lesson 4;
+}
+
+.schedule__item--lesson-heading--5 {
+    grid-column-start: lesson 5;
+}
+
+.schedule__item--lesson-heading--6 {
+    grid-column-start: lesson 6;
+}
+
+
+/* FIRST COLUMN OF THE SCHEDULE */
+
+.schedule__item--day-name {
+    grid-column-start: day-name;
+    grid-column-end: span 1;
+}
+
+.schedule__item--day-name--mon {
+    grid-row-start: day-mon;
+}
+
+.schedule__item--day-name--tue {
+    grid-row-start: day-tue;
+}
+
+.schedule__item--day-name--wed {
+    grid-row-start: day-wed;
+}
+
+.schedule__item--day-name--thu {
+    grid-row-start: day-thu;
+}
+
+.schedule__item--day-name--fri {
+    grid-row-start: day-fri;
+}
+
+
+/* CONTENTS OF SCHEDULE */
+/* Pro pridani dalsi polozky staci specifikovat den (grid-row-start), 
+zacatek(grid-column-start), dobu trvani(grid-column-end: span) */
+
+.schedule__item--A {
+    grid-row-start: day-tue;
+    grid-column-start: lesson 2;
+    grid-column-end: span 2;
+}
+
+.schedule__item--B {
+    grid-row-start: day-tue;
+    grid-column-start: lesson 6;
+    grid-column-end: span 1;
+}
+
+.schedule__item--C {
+    grid-row-start: day-wed;
+    grid-column-start: lesson 3;
+    grid-column-end: span 1;
+}
+
+.schedule__item--D {
+    grid-row-start: day-wed;
+    grid-column-start: lesson 4;
+    grid-column-end: span 1;
+}
+
+.schedule__item--E {
+    grid-row-start: day-fri;
+    grid-column-start: lesson 1;
+    grid-column-end: span 2;
+}
+
+.schedule__item--F {
+    grid-row-start: day-fri;
+    grid-column-start: lesson 4;
+    grid-column-end: span 2;
+}
