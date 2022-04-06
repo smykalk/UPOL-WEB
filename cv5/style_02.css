@@ -1,0 +1,72 @@
+body{
+    margin:0;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 3em [nav-start] 3em [nav-end] 10em 10em 3em;
+    grid-template-areas:
+        ". header header header ."
+        "nav nav nav nav nav"
+        ". content-A content-B content-C ."
+        ". content-D content-E content-F ."
+        ". footer footer footer .";
+
+    gap: 1em;
+    place-items: stretch;
+}
+
+.page__item {
+    /* Flex jen pro jednodussi zarovnani */
+    display:flex;
+    align-items: center;
+    padding: 1em;
+
+    border: 1px solid black;
+}
+
+.page__item--header {
+    grid-area: header;
+}
+
+.page__item--nav {
+    background-color: lightblue;
+    grid-area: nav;
+
+    display:grid;
+    gap: 1em;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+.page__item--nav--text {
+    grid-column: 2 / -1;
+}
+
+.page__item--content--A {
+    grid-area: content-A;
+}
+
+.page__item--content--B {
+    grid-area: content-B;
+}
+
+.page__item--content--C {
+    grid-area: content-C;
+}
+
+.page__item--content--D {
+    grid-area: content-D;
+}
+
+.page__item--content--E {
+    grid-area: content-E;
+}
+
+.page__item--content--F {
+    grid-area: content-F;
+}
+
+.page__item--footer {
+    grid-area: footer;
+}
