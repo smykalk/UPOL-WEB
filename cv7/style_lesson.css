@@ -1,4 +1,8 @@
-@media (max-width: 900px) {
+.queries {
+    color: grey;
+}
+
+@media (max-width: 700px) {
     .queries {
         color: blue;
     }
